@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Palette Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gradient Palette Generator</h1>
+    <div class="preview" id="preview"></div>
+
+    <div class="controls">
+      <div class="color-inputs" id="stops"></div>
+      <button id="addStop">Add Color Stop</button>
+
+      <select id="direction">
+        <option value="to right">To Right</option>
+        <option value="to left">To Left</option>
+        <option value="to bottom">To Bottom</option>
+        <option value="to top">To Top</option>
+        <option value="random">Custom Angle</option>
+      </select>
+
+      <input type="number" id="angle" class="angle-input" min="0" max="360" value="90" style="display:none;" placeholder="Angle (0-360)">
+
+      <button id="randomBtn">🎲 Random Gradient</button>
+
+      <div class="css-code">
+        <strong>CSS Code:</strong>
+        <p id="cssCode"></p>
+      </div>
+      <button id="copyCss" class="copy-btn">Copy CSS</button>
+
+      <div id="colorCodes" style="margin-top:10px;"></div>
+    </div>
+  </div>
+
+  <script src="style.js"></script>
+</body>
+</html>
